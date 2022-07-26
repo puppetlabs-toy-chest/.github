@@ -6,7 +6,7 @@ open source. Part of the open source lifecycle is when a project is ready for a
 new maintainer. That is what the Puppetlabs Toy Chest is for.
 
 Projects in this org have reached the end of their maintenance cycle at Puppet,
-but may still have a useful lifespan ahead of then under new maintainers. Some,
+but may still have a useful lifespan ahead of them under new maintainers. Some,
 like [Razor](https://github.com/puppetlabs-toy-chest/razor-server) were shipped
 as part of our commercial products. Some were
 [prototypes](https://github.com/puppetlabs-toy-chest/puppetcpp)
@@ -27,4 +27,3 @@ by and chat, ask questions, answer questions, or just share ideas.
 - 💬 https://slack.puppet.com
 - 🦊 https://voxpupuli.org
 - 🎙 https://dev.to/puppet
-
