@@ -2,10 +2,7 @@
 
 The repositories in this org are inactive and do not have any development
 resources allocated for them. We are not looking for contributions at this time
-but would love it if you would like to adopt a project. Modules on the Puppet
-Forge which are ready for adoption have their own process. You can read about
-that on the [Adoptable Puppet Modules](https://puppetlabs.github.io/community_management/#adopt)
-page.
+but would love it if you would like to adopt a project or module.
 
 
 ## What it means to adopt a repository
@@ -46,12 +43,20 @@ Once you're ready, we'll transfer ownership and responsibility for the repositor
    you assume ownership and responsibility for the project.
 1. In a single commit, update the `README.md`, `CONTRIBUTING.md`, any metadata files,
    or any other files referring to Puppet as the maintainer to indicate the
-   project's new status.
-1. Tag a single SemVer `MINOR` version bump release with the ownership  changes,
-   but *no other code changes* and publish it to any relevant marketplace.
+   project's new status. You might be tempted to make other changes now, but resist
+   that urge. This allows people to upgrade directly to your version with lower
+   friction. Save your improvements for the next release.
+   * If you're adopting a Forge module, you'll want to edit the `metadata.json` file
+     and update the `author`, `source`, `project_page`, and `issues_url` fields to
+     match your own Forge username and GitHub namespace.
+1. Increment the project's `MINOR` SemVer version number, indicating that this is a
+   backwards compatible update.
+1. Tag a single release with that version. It should include the ownership changes
+   but *no other code or functionality changes*, even if the previous release was
+   broken in some way.
+1. Publish it to any relevant marketplace, such as uploading a Forge module tarball
+   or pushing a new gem.
 1. Carry on as you wish; it's your baby now!
-
-
 
 
 ## Additional Resources
@@ -59,4 +64,3 @@ Once you're ready, we'll transfer ownership and responsibility for the repositor
 * [Puppet community guidelines](https://puppet.com/community/community-guidelines)
 * [General GitHub documentation](https://help.github.com/)
 * [Puppet Community Slack](https://slack.puppet.com)
-* [Adoptable Puppet Modules](https://puppetlabs.github.io/community_management/#adopt)
